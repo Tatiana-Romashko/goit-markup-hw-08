@@ -1,0 +1,35 @@
+.service__name {
+    @extend %align;
+}
+@media screen and (max-width: 1199px) {
+    .services__section {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .services__section {
+    padding-top: 0;
+    }
+    .services__list.list {
+        display: flex;
+        margin-left: -30px;
+    }
+    .service__item {
+        flex-basis: calc((100%-90px) / 3);
+        margin-left: 30px;
+    }
+    .service__card {
+        position: relative;
+    }
+    .service__name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include size(100%, 70px);
+        @include font(14px, 700, 16px);
+        justify-content: center;
+        color: var(--primary-text-color-white);
+        background-color: var(--service-background-color);
+        text-transform: uppercase;
+    }
+}

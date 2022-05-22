@@ -1,0 +1,57 @@
+.employees {
+    background-color: var(--secondary-background-color);
+}
+.employees__list.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+.employees__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 1px 3px var(--employee-box-shadow-color-one),
+        0px 1px 1px var(--employee-box-shadow-color-two),
+        0px 2px 1px var(--employee-box-shadow-color-three);
+    border-radius: 0px 0px 4px 4px;
+    margin: 15px;
+}
+.employees__card {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+.employees__name {
+    margin-bottom: 10px;
+    @include font(16px, 500, 19px);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.employees__position {
+    @include font(16px, 400, 19px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-light);
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px){
+    .employees__item {
+        width: 450px;
+    }  
+}
+@media screen and (min-width: 768px) {
+    .employees__item {
+        width: 354px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .employees__item {
+        width: 270px;
+    }
+    .employees__card {
+        padding-bottom: 30px;
+    }
+}
+
+

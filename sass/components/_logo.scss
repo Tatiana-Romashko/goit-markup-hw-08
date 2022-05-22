@@ -1,0 +1,9 @@
+.logo {
+    font-family: var(--secodary-font-family);
+    @include font(26px, 700, 31px);
+    color: var(--primary-text-color-dark);
+    letter-spacing: 0.03em;
+}
+.logo__fpart {
+    color: var(--logo-first-part-color);
+}

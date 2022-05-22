@@ -1,0 +1,180 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include size(100vw, 100vh);
+    background-color: var(--backdrop-background-color);
+    transition: opacity 350ms linear, visibility 350ms linear;
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+.backdrop__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include size(450px, 609px);
+    background: var(--modal-background-color);
+    box-shadow: 0px 1px 3px var(--modal-box-shadow-color-one),
+        0px 1px 1px var(--modal-box-shadow-color-two),
+        0px 2px 1px var(--modal-box-shadow-color-three);
+    border-radius: 4px;
+    padding: 40px;
+}
+.backdrop__modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include size(30px, 30px);
+    border-radius: 50%;
+    border: 1px solid var(--modal-close-button-border-color);
+    background: var(--modal-background-color);
+    fill: var(--backdrop-close-btn-primary-color);
+    padding: 0;
+    @extend %align;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    &:hover {
+        fill: var(--backdrop-close-btn-secondary-color);
+    }
+}
+.backdrop__modal-contact-form-title {
+    @include font(20px,700,30px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    display:flex;
+}
+.backdrop__modal-contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.backdrop__modal-contact-form-field {
+    margin-bottom: 10px;
+}
+.backdrop__modal-contact-form-field-name {
+    @include font(12px, 400, 14px);
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color-light);
+}
+.backdrop__modal-contact-form-input-wrapper {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+.backdrop__modal-contact-form-input {
+    @include size(100%, 40px);
+    border: 1px solid var(--contact-form-input-border-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+}
+.backdrop__modal-contact-form-message {
+    @include size(100%, 120px);
+    margin-top: 4px;
+    border: 1px solid var(--contact-form-input-border-color);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    &::placeholder {
+        color: var(--placeholder-text-color);
+        @include font(14px, 400, 16px);
+        letter-spacing: 0.01em;
+    }
+}
+.backdrop__modal-contact-form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    fill: var(--primary-form-icon-color-dark);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    .backdrop__modal-contact-form-input:focus+&,
+    .backdrop__modal-contact-form-input:hover+& {
+        fill: var(--form-input-secondary-color);
+    }
+}
+.backdrop__checkbox{
+    fill: var(--modal-background-color);
+}
+.backdrop__modal-contact-form-input:hover,
+.backdrop__modal-contact-form-message:hover,
+.backdrop__modal-contact-form-input:focus,
+.backdrop__modal-contact-form-message:focus{
+    outline: none;
+    border-color: var(--form-input-secondary-color);
+    fill: var(--form-input-secondary-color);
+}
+.backdrop__modal-contact-form-checkbox-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+.backdrop__modal-contact-form-checkbox-label {
+    @extend %align;
+    justify-content: center;
+    @include font(12px, 400, 14px);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-light);
+    &::before {
+        display: inline-block;
+        content: " ";
+        @include size(16px, 15px);
+        border: 1px solid var(--primary-form-icon-color-dark);
+        cursor: pointer;
+        margin-right: 8px;
+        margin-left: 0px;
+        transition-property: border-color, background-color, border-radius;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+    }
+    .backdrop__modal-contact-form-checkbox:checked+&::before {
+        background-color: var(--form-input-secondary-color);
+        border-color: var(--form-input-secondary-color);
+        border-radius: 2px;
+    }
+    .backdrop__modal-contact-form-checkbox:focus+&::before,
+    .backdrop__modal-contact-form-checkbox:hover+&::before {
+        border-color: var(--form-input-secondary-color);
+    }
+}
+.backdrop__modal-contact-form-checkbox-label-spart {
+    outline: none;
+}
+.backdrop__modal-button{
+    padding: 10px 55px;
+    align-items: center;
+}
+@media screen and (min-width: 1200px) {
+    .backdrop__modal {
+        @include size(528px, 581px);
+    }
+    .backdrop__modal-contact-form-title {
+        @include font(20px,700,23px);
+    }
+    .backdrop__modal-contact-form-checkbox-label {
+        @include font(14px, 400, 24px);
+     }
+}
+
+
+
+

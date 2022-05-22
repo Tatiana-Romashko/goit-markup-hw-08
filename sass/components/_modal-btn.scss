@@ -1,0 +1,24 @@
+.modal-button {
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 26px;
+    font-family: inherit;
+    @include font(16px, 700, 30px);
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--btn-text-color);
+    background-color: var(--btn-primary-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px var(--button-shadow-color);
+    border-radius: 4px;
+    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        outline: none;
+        background: var(--btn-secondary-color);
+    }
+}
+.button-wrapper {
+    @extend %align;
+    justify-content: center;
+}

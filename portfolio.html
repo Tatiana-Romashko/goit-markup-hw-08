@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header header_section_border">
+      <div class="container header__container">
+        <a href="./index.html" class="logo header__logo links"
+          ><span class="logo__fpart">Web</span>Studio</a
+        >
+        <nav class="navigation header__navigation">
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__links links"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__links links current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__links links">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts header__contacts list">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link links"
+            >
+              <svg class="contacts__mail-icon">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              <span class="contacts__link-text">info@devstudio.com</span></a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link links">
+              <svg class="contacts__phone-icon">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              <span class="contacts__link-text">+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
+        <button type="button" class="header__mobile-menu-icon-btn" data-menu-open>
+          <svg class="header__mobile-menu-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__list-wrapper">
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Студия</a></li>
+            <li class="mobile-menu__list-item"><a href="./portfolio.html" class="mobile-menu__list-link links">Портфолио</a></li>
+            <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Контакты</a></li>
+          </ul>
+          </div>
+          <div class="mobile-menu__social-links-wrapper">
+              <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__contacts-item">
+                <a href="tel:+380961111111" class="mobile-menu__contacts-link links">
+                +38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts__link contacts__link-email links">
+                  info@devstudio.com</a>
+              </li>
+              </ul>
+              <ul class="mobile-menu__social-list list">
+                <li class="mobile-menu__social-links">
+                  <a
+                    href=""
+                    class="mobile-menu__social-links__link links"
+                  >Instagram</a>
+                </li>
+                <li class="mobile-menu__social-links">
+                  <a
+                    href=""
+                    class="mobile-menu__social-links__link links"
+                  >Twitter</a>
+                </li>
+                <li class="mobile-menu__social-links">
+                  <a
+                    href=""
+                    class="mobile-menu__social-links__link links"
+                  >Facebook</a>
+                </li>
+                <li class="mobile-menu__social-links">
+                  <a
+                    href=""
+                    class="mobile-menu__social-links__link links"
+                  >LinkedIn</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="portfolio__sorting-btns list">
+            <li class="portfolio__sorting-item">
+              <button type="button" class="portfolio__sorting-btn btn">
+                Все
+              </button>
+            </li>
+            <li class="portfolio__sorting-item">
+              <button type="button" class="portfolio__sorting-btn btn">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="portfolio__sorting-item">
+              <button type="button" class="portfolio__sorting-btn btn">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolio__sorting-item">
+              <button type="button" class="portfolio__sorting-btn btn">
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio__sorting-item">
+              <button type="button" class="portfolio__sorting-btn btn">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio__list list">
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.webp 2x" 
+                      media="(min-width: 480px)" 
+                      width="450"
+                      height="460"
+                      type="image/webp">
+                      <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.webp 2x" 
+                      media="(min-width: 768px)" 
+                      width="354"
+                      height="294"
+                      type="image/webp">
+                      <source srcset="./images/images_mobile-first/portfolio/desktop/img1desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img1desktop@2.webp 2x" 
+                      media="(min-width: 1200px)" 
+                      width="370"
+                      height="294"
+                      type="image/webp">
+                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.png 2x" media="(min-width: 480px)"
+                      width="450"
+                      height="460"
+                      type="image/png">
+                      <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.png 2x" 
+                      media="(min-width: 768px)"
+                      width="354"
+                      height="294" 
+                      type="image/png">
+                      <source srcset="./images/images_mobile-first/portfolio/desktop/img1desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img1desktop@2.png 2x" 
+                      media="(min-width: 1200px)" 
+                      width="370"
+                      height="294"
+                      type="image/png">
+                      <img
+                        src="./images/images_mobile-first/portfolio/mobile/img1mobile.png"
+                        alt="кейс веб-сайта"
+                        class="portfolio__image"
+                        style="width:100%; height:auto"
+                      />
+                  </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Технокряк</h3>
+                  <p class="portfolio__item-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img2tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img2tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img2desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img2desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img2tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img2tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img2desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img2desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img2mobile.png"
+                    alt="кейс дизайна"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio__item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img3tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img3tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img3desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img3desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img3tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img3tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img3desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img3desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img3mobile.png"
+                    alt="кейс приложения"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Ресторан Seafood</h3>
+                  <p class="portfolio__item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img4tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img4tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img4desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img4desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img4tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img4tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img4desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img4desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img4mobile.png"
+                    alt="кейс маркетинга"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Проект Prime</h3>
+                  <p class="portfolio__item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img5tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img5tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img5desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img5desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img5tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img5tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img5desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img5desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img5mobile.png"
+                    alt="кейс приложения"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Проект Boxes</h3>
+                  <p class="portfolio__item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img6tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img6tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img6desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img6desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img6tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img6tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img6desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img6desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img6mobile.png"
+                    alt="кейс веб-сайта"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="portfolio__item-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img7tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img7tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img7desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img7desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img7tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img7tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img7desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img7desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img7mobile.png"
+                    alt="кейс дизайна"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Издание Limited Edition</h3>
+                  <p class="portfolio__item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img8tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img8tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img8desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img8desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img8tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img8tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img8desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img8desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img8mobile.png"
+                    alt="кейс маркетинга"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Проект LAB</h3>
+                  <p class="portfolio__item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__list-item">
+              <a class="portfolio__list-link links" href="">
+                <div class="portfolio__card-wrapper">
+                  <picture>
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.webp 2x" 
+                    media="(min-width: 480px)" 
+                    width="450"
+                    height="460"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img9tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img9tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img9desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img9desktop@2.webp 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.png 2x" media="(min-width: 480px)"
+                    width="450"
+                    height="460"
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img9tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img9tablet@2.png 2x" 
+                    media="(min-width: 768px)"
+                    width="354"
+                    height="294" 
+                    type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img9desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img9desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
+                    height="294"
+                    type="image/png">
+                  <img
+                    src="./images/images_mobile-first/portfolio/mobile/img9mobile.png"
+                    alt="кейс приложения"
+                    class="portfolio__image"
+                    style="width:100%; height:auto"
+                  />
+                </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h3 class="portfolio__item-name">Growing Business</h3>
+                  <p class="portfolio__item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__address">
+          <div class="footer__logo-positioning">
+            <a href="./index.html" class="logo footer__logo links"
+              ><span class="logo__fpart">Web</span>Studio</a
+            >
+          </div>
+          <address class="footer__contacts">
+            <ul class="footer__contacts-list list">
+              <li class="footer__contacts-item">
+                <a
+                  href="https://goo.gl/maps/MWLHDJ8a9DJwNYTC7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__contacts-item-link footer__contacts-map links"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contacts-item-link links"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a
+                  href="tel:+380961111111"
+                  class="footer__contacts-item-link links"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__social-links">
+          <h3 class="footer__social-links-header">Присоединяйтесь</h3>
+          <ul class="social-links list">
+            <li class="social-links__item">
+              <a
+                href=""
+                class="social-links__link social-links__link_theme_dark links"
+              >
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                href=""
+                class="social-links__link social-links__link_theme_dark links"
+              >
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                href=""
+                class="social-links__link social-links__link_theme_dark links"
+              >
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                href=""
+                class="social-links__link social-links__link_theme_dark links"
+              >
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer__form">
+          <h3 class="footer__form-header">Подпишитесь на рассылку</h3>
+          <div class="footer__form-wrapper">
+            <input
+              type="email"
+              name="footer-email-input"
+              class="footer__form-input"
+              placeholder="E-mail"
+              id="email-footer"
+              required
+            />
+            <button type="button" class="modal-button btn footer__modal-button">
+              Подписаться
+              <svg class="modal-button__icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

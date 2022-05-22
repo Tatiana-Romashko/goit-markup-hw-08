@@ -1,0 +1,12 @@
+%section-title_positioning{
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+    %section-title_positioning{
+        margin-bottom: 50px;
+    }
+}
+%align {
+    display: flex;
+    align-items: center;
+}

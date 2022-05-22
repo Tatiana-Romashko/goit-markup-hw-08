@@ -1,0 +1,30 @@
+.portfolio__sorting-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 40px;
+}
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+@media screen and (min-width: 768px) {
+    .portfolio__sorting-btns {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .portfolio__list {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .portfolio__sorting-btns {
+        margin-bottom: 50px;
+    }
+}
+

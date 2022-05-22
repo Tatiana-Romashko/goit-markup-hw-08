@@ -1,0 +1,27 @@
+
+.portfolio__sorting-btn {
+    padding: 6px 20px;
+    font-family: inherit;
+    @include font(16px, 500, 26px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    &:hover,
+    &:focus {
+        color: var(--btn-text-color);
+        background-color: var(--btn-primary-color);
+        box-shadow: 0px 3px 1px var(--btn-shadow-color-one),
+            0px 1px 2px var(--btn-shadow-color-two),
+            0px 2px 2px var(--btn-shadow-color-three);
+    }
+}
+.portfolio__sorting-item {
+    margin-left: 8px;
+    margin-top: 15px;
+}
+
