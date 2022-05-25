@@ -12,7 +12,7 @@
     }
 }
 .backdrop__modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -163,6 +163,12 @@
     padding: 10px 55px;
     align-items: center;
 }
+@media screen and (min-width: 480px) {
+    .backdrop__modal {
+        position: absolute;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .backdrop__modal {
         @include size(528px, 581px);

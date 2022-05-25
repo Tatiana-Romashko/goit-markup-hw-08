@@ -1,21 +1,27 @@
 .advantages__list {
     display: flex;
     flex-direction: column;
+    margin-top: -30px;
 }
 .advantages__item{
-    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100%-120px) / 4);
+    align-items: center;
 }
 .advantages__pic-positioning {
     background-color: var(--secondary-background-color);
     @extend %align;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
 }
 .advantages__item-header {
-    margin-bottom: 10px;
+    text-align: center;
     @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .advantages__item-description {
     @include font(14px, 400, 24px);
@@ -26,14 +32,6 @@
     @include size(70px, 70px);
     object-position: center;
 }
-@media screen and (min-width: 480px){
-    .advantages__pic-positioning {
-        @include size(450px, 120px);
-    }
-    .advantages__item-description {
-        @include size(450px, 75px);
-    }
-}
 @media screen and (min-width: 768px) {
     .advantages__list {
         flex-direction:row;
@@ -41,32 +39,23 @@
         margin-left: -30px;
     }
     .advantages__item {
-        flex-basis: calc((100%-120px) / 4);
         margin-left: 30px;
-        padding: 0px;
     }
     .advantages__pic-positioning {
-        @include size(354px, 120px);
+        padding-left: 142px;
+        padding-right: 142px;
     }
-    .advantages__item-description {
-        @include size(354px, 75px);
+    .advantages__item-header {
+        text-align:unset;
     }
 }
 @media screen and (min-width: 1200px) {
     .advantages__list {
-        flex-direction:row;
         flex-wrap: nowrap;
-        margin-left: -30px;
-    }
-    .advantages__item {
-        flex-basis: calc((100%-120px) / 4);
-        margin-left: 30px;
     }
     .advantages__pic-positioning {
-        @include size(270px, 120px);
-    }
-    .advantages__item-description {
-        @include size(270px, 75px);
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 

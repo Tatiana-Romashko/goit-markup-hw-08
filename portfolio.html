@@ -79,8 +79,8 @@
           </button>
           <div class="mobile-menu__list-wrapper">
           <ul class="mobile-menu__list list">
-            <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Студия</a></li>
-            <li class="mobile-menu__list-item"><a href="./portfolio.html" class="mobile-menu__list-link links">Портфолио</a></li>
+            <li class="mobile-menu__list-item"><a href="./index.html" class="mobile-menu__list-link links">Студия</a></li>
+            <li class="mobile-menu__list-item"><a href="./portfolio.html" class="mobile-menu__list-link links current">Портфолио</a></li>
             <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Контакты</a></li>
           </ul>
           </div>
@@ -88,13 +88,13 @@
               <ul class="mobile-menu__contacts list">
               <li class="mobile-menu__contacts-item">
                 <a href="tel:+380961111111" class="mobile-menu__contacts-link links">
-                +38 096 111 11 11</a>
+                <span class="mobile-menu__info mobile-menu__tel">+38 096 111 11 11</span></a>
               </li>
               <li class="mobile-menu__contacts-item">
                 <a
                   href="mailto:info@devstudio.com"
                   class="contacts__link contacts__link-email links">
-                  info@devstudio.com</a>
+                  <span class="mobile-menu__info mobile-menu__email">info@devstudio.com</span></a>
               </li>
               </ul>
               <ul class="mobile-menu__social-list list">
@@ -163,40 +163,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.webp 2x" 
-                      media="(min-width: 480px)" 
-                      width="450"
-                      height="294"
-                      type="image/webp">
-                      <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.webp 2x" 
-                      media="(min-width: 768px)" 
-                      width="354"
-                      height="294"
-                      type="image/webp">
                       <source srcset="./images/images_mobile-first/portfolio/desktop/img1desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img1desktop@2.webp 2x" 
                       media="(min-width: 1200px)" 
                       width="370"
                       height="294"
                       type="image/webp">
-                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.png 2x" media="(min-width: 480px)"
-                      width="450"
-                      height="294"
-                      type="image/png">
-                      <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.png 2x" 
-                      media="(min-width: 768px)"
-                      width="354"
-                      height="294" 
-                      type="image/png">
                       <source srcset="./images/images_mobile-first/portfolio/desktop/img1desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img1desktop@2.png 2x" 
                       media="(min-width: 1200px)" 
                       width="370"
                       height="294"
                       type="image/png">
+                       <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.webp 2x" 
+                      media="(min-width: 768px)" 
+                      width="354"
+                      height="294"
+                      type="image/webp"> 
+                      <source srcset="./images/images_mobile-first/portfolio/tablet/img1tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img1tablet@2.png 2x" 
+                      media="(min-width: 768px)"
+                      width="354"
+                      height="294" 
+                      type="image/png">
+                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.webp 2x" 
+                      media="(max-width: 767px)" 
+                      width="450"
+                      height="294"
+                      type="image/webp">
+                      <source srcset="./images/images_mobile-first/portfolio/mobile/img1mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img1mobile@2.png 2x" media="(max-width: 767px)"
+                      width="450"
+                      height="294"
+                      type="image/png">  
                       <img
                         src="./images/images_mobile-first/portfolio/mobile/img1mobile.png"
                         alt="кейс веб-сайта"
                         class="portfolio__image"
-                        style="width:100%; height:auto"
                       />
                   </picture>
                   <p class="overlay">
@@ -212,40 +211,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img2tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img2tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img2desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img2desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img2desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img2desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img2tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img2tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img2tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img2tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img2desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img2desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img2mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img2mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img2mobile.png"
                     alt="кейс дизайна"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -263,40 +261,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img3tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img3tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img3desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img3desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img3desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img3desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img3tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img3tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img3tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img3tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img3desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img3desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img3mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img3mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img3mobile.png"
                     alt="кейс приложения"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -312,40 +309,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img4tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img4tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img4desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img4desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img4desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img4desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img4tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img4tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img4tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img4tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img4desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img4desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img4mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img4mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img4mobile.png"
                     alt="кейс маркетинга"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -361,40 +357,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img5tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img5tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img5desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img5desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img5desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img5desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img5tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img5tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img5tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img5tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img5desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img5desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img5mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img5mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img5mobile.png"
                     alt="кейс приложения"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -410,40 +405,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img6tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img6tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img6desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img6desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img6desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img6desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img6tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img6tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img6tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img6tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img6desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img6desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img6mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img6mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img6mobile.png"
                     alt="кейс веб-сайта"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -461,40 +455,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img7tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img7tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img7desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img7desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img7desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img7desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img7tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img7tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img7tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img7tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img7desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img7desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img7mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img7mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img7mobile.png"
                     alt="кейс дизайна"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -510,40 +503,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img8tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img8tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img8desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img8desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img8desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img8desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img8tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img8tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img8tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img8tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img8desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img8desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img8mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img8mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img8mobile.png"
                     alt="кейс маркетинга"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -559,40 +551,39 @@
               <a class="portfolio__list-link links" href="">
                 <div class="portfolio__card-wrapper">
                   <picture>
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.webp 2x" 
-                    media="(min-width: 480px)" 
-                    width="450"
-                    height="294"
-                    type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/tablet/img9tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img9tablet@2.webp 2x" 
-                    media="(min-width: 768px)" 
-                    width="354"
-                    height="294"
-                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/desktop/img9desktop.webp 1x, ./images/images_mobile-first/portfolio/desktop/img9desktop@2.webp 2x" 
                     media="(min-width: 1200px)" 
                     width="370"
                     height="294"
                     type="image/webp">
-                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.png 2x" media="(min-width: 480px)"
-                    width="450"
+                    <source srcset="./images/images_mobile-first/portfolio/desktop/img9desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img9desktop@2.png 2x" 
+                    media="(min-width: 1200px)" 
+                    width="370"
                     height="294"
                     type="image/png">
+                    <source srcset="./images/images_mobile-first/portfolio/tablet/img9tablet.webp 1x, ./images/images_mobile-first/portfolio/tablet/img9tablet@2.webp 2x" 
+                    media="(min-width: 768px)" 
+                    width="354"
+                    height="294"
+                    type="image/webp">
                     <source srcset="./images/images_mobile-first/portfolio/tablet/img9tablet.png 1x, ./images/images_mobile-first/portfolio/tablet/img9tablet@2.png 2x" 
                     media="(min-width: 768px)"
                     width="354"
                     height="294" 
                     type="image/png">
-                    <source srcset="./images/images_mobile-first/portfolio/desktop/img9desktop.png 1x, ./images/images_mobile-first/portfolio/desktop/img9desktop@2.png 2x" 
-                    media="(min-width: 1200px)" 
-                    width="370"
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.webp 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.webp 2x" 
+                    media="(max-width: 767px)" 
+                    width="450"
+                    height="294"
+                    type="image/webp">
+                    <source srcset="./images/images_mobile-first/portfolio/mobile/img9mobile.png 1x, ./images/images_mobile-first/portfolio/mobile/img9mobile@2.png 2x" media="(max-width: 767px)"
+                    width="450"
                     height="294"
                     type="image/png">
                   <img
                     src="./images/images_mobile-first/portfolio/mobile/img9mobile.png"
                     alt="кейс приложения"
                     class="portfolio__image"
-                    style="width:100%; height:auto"
                   />
                 </picture>
                   <p class="overlay">
@@ -610,7 +601,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__address">
+        <div class="footer__address footer__items">
           <div class="footer__logo-positioning">
             <a href="./index.html" class="logo footer__logo links"
               ><span class="logo__fpart">Web</span>Studio</a
@@ -644,9 +635,9 @@
             </ul>
           </address>
         </div>
-        <div class="footer__social-links">
+        <div class="footer__social-links footer__items">
           <h3 class="footer__social-links-header">Присоединяйтесь</h3>
-          <ul class="social-links list">
+          <ul class="social-links list footer__social-list">
             <li class="social-links__item">
               <a
                 href=""
@@ -689,7 +680,7 @@
             </li>
           </ul>
         </div>
-        <form class="footer__form">
+        <form class="footer__form footer__items">
           <h3 class="footer__form-header">Подпишитесь на рассылку</h3>
           <div class="footer__form-wrapper">
             <input

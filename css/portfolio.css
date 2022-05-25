@@ -312,7 +312,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0ms;
   }
-  .mobile-menu__list-link:hover, .mobile-menu__list-link:focus {
+  .mobile-menu__list-link.current, .mobile-menu__list-link:hover, .mobile-menu__list-link:focus {
     color: var(--links-secondary-color);
   }
   .mobile-menu__list-item:not(:last-child),
@@ -323,14 +323,14 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .mobile-menu__contacts-item:not(:last-child) {
+  .mobile-menu__tel {
     font-size: 34px;
     font-weight: 500;
     line-height: 1.18;
     color: var(--links-secondary-color);
     letter-spacing: 0.02em;
   }
-  .mobile-menu__contacts-item:last-child {
+  .mobile-menu__email {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.17;
@@ -365,7 +365,7 @@ img {
 }
 
 .modal-button {
-  min-width: 200px;
+  max-width: 200px;
   height: 50px;
   padding: 10px 26px;
   font-family: inherit;
@@ -391,6 +391,12 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-width: 480px) {
+  .modal-button {
+    min-width: 200px;
+  }
+}
+
 .portfolio__sorting-btn {
   padding: 6px 20px;
   font-family: inherit;
@@ -414,18 +420,17 @@ img {
 }
 
 .portfolio__sorting-item {
-  margin-left: 8px;
   margin-top: 15px;
 }
 
+.portfolio__sorting-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio__list-item {
-  width: 450px;
-  padding: 0px;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-  border-color: var(--portfolio-cards-border-color);
-  margin: 15px;
+  flex-basis: calc((100%-270px) / 9);
+  margin-top: 30px;
+  margin-left: 30px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -438,6 +443,9 @@ img {
 }
 
 .portfolio__list-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   opacity: 1;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -457,7 +465,12 @@ img {
 
 .portfolio__description {
   padding: 20px 24px;
+  flex-grow: 1;
   background: var(--primary-background-color);
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--portfolio-cards-border-color);
 }
 
 .portfolio__item-name {
@@ -479,13 +492,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio__list-item {
-    width: 354px;
+    min-width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio__list-item {
-    width: 370px;
+    min-width: 370px;
   }
 }
 
@@ -510,13 +523,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .overlay {
-    padding: 25px 24px 77px 25px;
+    padding: 49px 24px 77px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    padding: 32px 24px;
+    padding: 63px 24px;
   }
 }
 
@@ -675,7 +688,6 @@ img {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: -15px;
-  margin-left: -8px;
   margin-bottom: 40px;
 }
 
@@ -683,7 +695,8 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: -15px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -704,7 +717,7 @@ img {
 }
 
 .footer {
-  padding: 60px 15px;
+  padding: 60px 0px;
   background-color: var(--footer-background-color);
 }
 
@@ -714,11 +727,18 @@ img {
   justify-content: center;
 }
 
+.footer__items {
+  flex-basis: calc((100%-90px) / 3);
+}
+
+.footer__items:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 .footer__address {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer__logo-positioning {
@@ -760,10 +780,6 @@ img {
 
 .footer__contacts-map {
   color: var(--primary-text-color-white);
-}
-
-.footer__social-links {
-  margin-bottom: 60px;
 }
 
 .footer__social-links-header,
@@ -835,34 +851,27 @@ img {
   .footer__container {
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
-  }
-  .footer__social-links {
-    padding-top: 5px;
-  }
-  .footer__address {
-    margin-right: 165px;
+    justify-content: space-around;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-wrap: nowrap;
-  }
-  .footer__address {
-    margin-right: 70px;
-    margin-bottom: 0px;
+    align-items: baseline;
   }
   .footer__contacts-list {
     align-items: flex-start;
   }
+  .footer__items {
+    margin-bottom: 0px;
+  }
   .footer__form {
-    padding-top: 12px;
     margin-left: auto;
   }
-  .footer__social-links {
-    padding-top: 12px;
-    margin-bottom: 0px;
+  .footer__social-list {
+    margin-right: 0px;
+    margin-left: 0px;
   }
   .footer__logo-positioning,
   .footer__social-links-header,

@@ -21,7 +21,9 @@
     }
 }
 .portfolio__sorting-item {
-    margin-left: 8px;
+    &:not(:last-child){
+        margin-right: 8px;
+    }
     margin-top: 15px;
 }
 

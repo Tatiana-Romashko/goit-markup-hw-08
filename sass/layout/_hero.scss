@@ -1,5 +1,5 @@
 .hero {
-    background: var(--hero-background-color);
+    background-color: var(--hero-background-color);
 }
 .hero.section {
     @extend %align;
@@ -9,20 +9,18 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-text-color-white);
-    text-transform: uppercase;
     @include font(26px, 900, 42px);
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .hero__container {
-    align-content: center;
-}
-.hero__title-wrapper {
     display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 767px) {
     .hero {
-        background: var(--hero-background-color);
         background-image: linear-gradient(var(--hero-background-gradient-color),
                 var(--hero-background-gradient-color)),
             url('../images/images_mobile-first/hero/img_mobile@1x.jpg');
@@ -36,7 +34,7 @@
         }
     
     .hero__title {
-        width: 360px;
+        max-width: 360px;
         }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -48,12 +46,12 @@
 }
 @media screen and (min-width: 768px) {
     .hero {
-        background: var(--hero-background-color);
         background-image: linear-gradient(var(--hero-background-gradient-color),
                 var(--hero-background-gradient-color)),
             url('../images/images_mobile-first/hero/img_tablet@1x.jpg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size:contain;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -62,16 +60,22 @@
             background-image: url('img_tablet@2x.jpg');
         }
     }
+    .hero.section {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        }
+    
+    .hero__title {
+        width: 360px;
+        }
 }
 @media screen and (min-width: 1200px) {
     .hero {
-        background: var(--hero-background-color);
         background-image: linear-gradient(var(--hero-background-gradient-color),
                 var(--hero-background-gradient-color)),
             url('../images/images_mobile-first/hero/img_desktop@1x.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+            background-size:auto;
+        }
     .hero.section {
         padding-top: 200px;
         padding-bottom: 200px;

@@ -58,6 +58,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0ms;
+        &.current,
         &:hover,
         &:focus{
             color: var(--links-secondary-color);
@@ -71,12 +72,12 @@
         display: flex;
         flex-direction: column;
     }
-    .mobile-menu__contacts-item:not(:last-child){ 
+    .mobile-menu__tel{
         @include font(34px, 500, 40px);
         color: var(--links-secondary-color);
         letter-spacing: 0.02em;
     }
-    .mobile-menu__contacts-item:last-child{
+    .mobile-menu__email{
         @include font(24px, 500, 28px);
         color: var(--primary-text-color-light);
         letter-spacing: 0.02em;

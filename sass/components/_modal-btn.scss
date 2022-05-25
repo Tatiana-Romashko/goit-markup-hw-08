@@ -1,5 +1,5 @@
 .modal-button {
-    min-width: 200px;
+    max-width: 200px;
     height: 50px;
     padding: 10px 26px;
     font-family: inherit;
@@ -21,4 +21,9 @@
 .button-wrapper {
     @extend %align;
     justify-content: center;
+}
+@media screen and (min-width: 480px){
+    .modal-button {
+        min-width: 200px;
+    }
 }

@@ -79,24 +79,24 @@
         </button>
         <div class="mobile-menu__list-wrapper">
         <ul class="mobile-menu__list list">
-          <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Студия</a></li>
+          <li class="mobile-menu__list-item"><a href="./index.html" class="mobile-menu__list-link links current">Студия</a></li>
           <li class="mobile-menu__list-item"><a href="./portfolio.html" class="mobile-menu__list-link links">Портфолио</a></li>
           <li class="mobile-menu__list-item"><a href="" class="mobile-menu__list-link links">Контакты</a></li>
         </ul>
         </div>
         <div class="mobile-menu__social-links-wrapper">
-          <ul class="contacts mobile-menu__contacts list">
-           <li class="contacts__item mobile-menu__contacts-item">
-            <a href="tel:+380961111111" class="contacts__link links">
-            +38 096 111 11 11</a>
-          </li>
-          <li class="contacts__item mobile-menu__contacts-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts__link links">
-              info@devstudio.com</a>
-          </li>
-        </ul>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu__contacts-link links">
+              <span class="mobile-menu__info mobile-menu__tel">+38 096 111 11 11</span></a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts__link contacts__link-email links">
+                <span class="mobile-menu__info mobile-menu__email">info@devstudio.com</span></a>
+            </li>
+          </ul>
         <ul class="mobile-menu__social-list list">
           <li class="mobile-menu__social-links">
             <a
@@ -131,14 +131,10 @@
       <!--HERO-->
       <section class="hero section">
         <div class="container hero__container">
-          <div class="hero__title-wrapper">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          </div>
-          <div class="button-wrapper">
-            <button type="button" class="modal-button btn" data-modal-open>
+            <button type="button" class="modal-button btn hero__modal-button" data-modal-open>
               Заказать услугу
             </button>
-          </div>
         </div>
       </section> 
       <!--ADVANTAGES -->
@@ -265,40 +261,39 @@
           <ul class="employees__list list">
             <li class="employees__item">
               <picture>
-                <source srcset="./images/images_mobile-first/team/team-mob/team1_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team1_mobile@2x.webp 2x" 
-                media="(min-width: 480px)" 
-                width="450"
-                height="460"
-                type="image/webp">
-                <source srcset="./images/images_mobile-first/team-tablet@2x/team1_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team1_tablet@2x.webp 2x" 
-                media="(min-width: 768px)" 
-                width="354"
-                height="374"
-                type="image/webp">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team1_desktop.webp 1x, ./images/images_mobile-first/team/team-desktop/team1_desktop@2x.webp 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-mob/team1_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team1_mobile@2x.jpg 2x" media="(min-width: 480px)"
-                width="450"
-                height="460"
-                type="image/jpg">
-                <source srcset="./images/images_mobile-first/team-tablet@2x/team1_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team1_tablet@2x.jpg 2x" 
-                media="(min-width: 768px)"
-                width="354"
-                height="374" 
-                type="image/jpg">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team1_desktop.jpg 1x, ./images/images_mobile-first/team/team-desktop/team1_desktop@2x.jpg 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/jpg">
+                <source srcset="./images/images_mobile-first/team-tablet@2x/team1_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team1_tablet@2x.webp 2x" 
+                media="(min-width: 768px)" 
+                width="354"
+                height="374"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team-tablet@2x/team1_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team1_tablet@2x.jpg 2x" 
+                media="(min-width: 768px)"
+                width="354"
+                height="374" 
+                type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-mob/team1_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team1_mobile@2x.webp 2x" 
+                media="(max-width: 767px)" 
+                width="450"
+                height="460"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-mob/team1_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team1_mobile@2x.jpg 2x" media="(max-width: 767px)"
+                width="450"
+                height="460"
+                type="image/jpg">
               <img
                 src="./images/images_mobile-first/team-mob@2x/team1_mobile.jpg"
                 alt="demjanenko"
                 class="employees__photo"
-                style="width:100%; height:auto"
               />
             </picture>
               <div class="employees__card">
@@ -350,40 +345,39 @@
             </li>
             <li class="employees__item">
               <picture>
-                <source srcset="./images/images_mobile-first/team/team-mob/team2_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team2_mobile@2x.webp 2x" 
-                media="(min-width: 480px)" 
-                width="450"
-                height="460"
-                type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team2_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team2_tablet@2x.webp 2x" 
-                media="(min-width: 768px)" 
-                width="354"
-                height="374"
-                type="image/webp">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team2_desktop.webp 1x, ./images/images_mobile-first/team/team-desktop/team2_desktop@2x.webp 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-mob/team2_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team2_mobile@2x.jpg 2x" media="(min-width: 480px)"
-                width="450"
-                height="460"
-                type="image/jpg">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team2_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team2_tablet@2x.jpg 2x" 
-                media="(min-width: 768px)"
-                width="354"
-                height="374" 
-                type="image/jpg">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team2_desktop.jpg 1x, ./images/images_mobile-first/team/team-desktop/team2_desktop@2x.jpg 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team2_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team2_tablet@2x.webp 2x" 
+                media="(min-width: 768px)" 
+                width="354"
+                height="374"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team2_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team2_tablet@2x.jpg 2x" 
+                media="(min-width: 768px)"
+                width="354"
+                height="374" 
+                type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-mob/team2_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team2_mobile@2x.webp 2x" 
+                media="(max-width: 767px)" 
+                width="450"
+                height="460"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-mob/team2_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team2_mobile@2x.jpg 2x" media="(max-width: 767px)"
+                width="450"
+                height="460"
+                type="image/jpg">
               <img
                 src="./images/images_mobile-first/team-mob@2x/team2_mobile.jpg"
                 alt="repina"
                 class="employees__photo"
-                style="width:100%; height:auto"
               />
             </picture>
                 <div class="employees__card">
@@ -435,40 +429,39 @@
             </li>
             <li class="employees__item">
               <picture>
-                <source srcset="./images/images_mobile-first/team/team-mob/team3_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team3_mobile@2x.webp 2x" 
-                media="(min-width: 480px)" 
-                width="450"
-                height="460"
-                type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team3_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team3_tablet@2x.webp 2x" 
-                media="(min-width: 768px)" 
-                width="354"
-                height="374"
-                type="image/webp">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team3_desktop.webp 1x, ./images/images_mobile-first/team/team-desktop/team3_desktop@2x.webp 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-mob/team3_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team3_mobile@2x.jpg 2x" media="(min-width: 480px)"
-                width="450"
-                height="460"
-                type="image/jpg">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team3_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team3_tablet@2x.jpg 2x" 
-                media="(min-width: 768px)"
-                width="354"
-                height="374" 
-                type="image/jpg">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team3_desktop.jpg 1x, ./images/images_mobile-first/team/team-desktop/team3_desktop@2x.jpg 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team3_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team3_tablet@2x.webp 2x" 
+                media="(min-width: 768px)" 
+                width="354"
+                height="374"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team3_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team3_tablet@2x.jpg 2x" 
+                media="(min-width: 768px)"
+                width="354"
+                height="374" 
+                type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-mob/team3_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team3_mobile@2x.webp 2x" 
+                media="(max-width: 767px)" 
+                width="450"
+                height="460"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-mob/team3_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team3_mobile@2x.jpg 2x" media="(max-width: 767px)"
+                width="450"
+                height="460"
+                type="image/jpg">
               <img
                 src="./images/images_mobile-first/team-mob@2x/team3_mobile.jpg"
                 alt="tarasov"
                 class="employees__photo"
-                style="width:100%; height:auto"
               />
             </picture>
               <div class="employees__card">
@@ -520,40 +513,39 @@
             </li>
             <li class="employees__item">
               <picture>
-                <source srcset="./images/images_mobile-first/team/team-mob/team4_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team4_mobile@2x.webp 2x" 
-                media="(min-width: 480px)" 
-                width="450"
-                height="460"
-                type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team4_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team4_tablet@2x.webp 2x" 
-                media="(min-width: 768px)" 
-                width="354"
-                height="374"
-                type="image/webp">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team4_desktop.webp 1x, ./images/images_mobile-first/team/team-desktop/team4_desktop@2x.webp 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/webp">
-                <source srcset="./images/images_mobile-first/team/team-mob/team4_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team4_mobile@2x.jpg 2x" media="(min-width: 480px)"
-                width="450"
-                height="460"
-                type="image/jpg">
-                <source srcset="./images/images_mobile-first/team/team-tablet/team4_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team4_tablet@2x.jpg 2x" 
-                media="(min-width: 768px)"
-                width="354"
-                height="374" 
-                type="image/jpg">
                 <source srcset="./images/images_mobile-first/team/team-desktop/team4_desktop.jpg 1x, ./images/images_mobile-first/team/team-desktop/team4_desktop@2x.jpg 2x" 
                 media="(min-width: 1200px)" 
                 width="270"
                 height="260"
                 type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team4_tablet.webp 1x, ./images/images_mobile-first/team/team-tablet/team4_tablet@2x.webp 2x" 
+                media="(min-width: 768px)" 
+                width="354"
+                height="374"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-tablet/team4_tablet.jpg 1x, ./images/images_mobile-first/team/team-tablet/team4_tablet@2x.jpg 2x" 
+                media="(min-width: 768px)"
+                width="354"
+                height="374" 
+                type="image/jpg">
+                <source srcset="./images/images_mobile-first/team/team-mob/team4_mobile.webp 1x, ./images/images_mobile-first/team/team-mob/team4_mobile@2x.webp 2x" 
+                media="(max-width: 767px)" 
+                width="450"
+                height="460"
+                type="image/webp">
+                <source srcset="./images/images_mobile-first/team/team-mob/team4_mobile.jpg 1x, ./images/images_mobile-first/team/team-mob/team4_mobile@2x.jpg 2x" media="(max-width: 767px)"
+                width="450"
+                height="460"
+                type="image/jpg">
               <img
                 src="./images/images_mobile-first/team/team-mob@2x/team3_mobile.jpg"
                 alt="ermakov"
                 class="employees__photo"
-                style="width:100%; height:auto"
               />
             </picture>
               <div class="employees__card">
@@ -658,7 +650,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__address">
+        <div class="footer__address footer__items">
           <div class="footer__logo-positioning">
             <a href="./index.html" class="logo footer__logo links"
               ><span class="logo__fpart">Web</span>Studio</a
@@ -692,10 +684,10 @@
             </ul>
           </address>
         </div>
-        <div class="footer__social-links">
+        <div class="footer__social-links footer__items">
           <h3 class="footer__social-links-header">Присоединяйтесь</h3>
-          <ul class="social-links list">
-            <li class="social-links-item">
+          <ul class="social-links list footer__social-list">
+            <li class="social-links__item">
               <a
                 href=""
                 class="social-links__link social-links__link_theme_dark links"
@@ -705,7 +697,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-links-item">
+            <li class="social-links__item">
               <a
                 href=""
                 class="social-links__link social-links__link_theme_dark links"
@@ -715,7 +707,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-links-item">
+            <li class="social-links__item">
               <a
                 href=""
                 class="social-links__link social-links__link_theme_dark links"
@@ -725,7 +717,7 @@
                 </svg>
               </a>
             </li>
-            <li class="social-links-item">
+            <li class="social-links__item">
               <a
                 href=""
                 class="social-links__link social-links__link_theme_dark links"
@@ -737,7 +729,7 @@
             </li>
           </ul>
         </div>
-        <form class="footer__form">
+        <form class="footer__form footer__items">
           <h3 class="footer__form-header">Подпишитесь на рассылку</h3>
           <div class="footer__form-wrapper">
             <input
