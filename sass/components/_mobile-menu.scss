@@ -85,6 +85,7 @@
     .mobile-menu__social-list{
         margin-top: 64px;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
     }
     .mobile-menu__social-links__link{

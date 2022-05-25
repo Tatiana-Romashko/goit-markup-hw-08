@@ -12,11 +12,11 @@
     }
 }
 .backdrop__modal {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include size(450px, 609px);
+    @include size(100%, 609px);
     background: var(--modal-background-color);
     box-shadow: 0px 1px 3px var(--modal-box-shadow-color-one),
         0px 1px 1px var(--modal-box-shadow-color-two),
@@ -165,7 +165,7 @@
 }
 @media screen and (min-width: 480px) {
     .backdrop__modal {
-        position: absolute;
+        @include size(450px, 609px);
     }
 }
 
